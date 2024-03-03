@@ -1,0 +1,26 @@
+appId: com.alejandrorios.meli_challenge
+onFlowComplete:
+  - stopApp
+---
+- launchApp
+- assertVisible: "No hay resultados !!"
+- assertVisible: "Prueba buscando algun producto en la barra de busqueda"
+- tapOn: "Buscar en MeLi Challenge"
+- inputText: "iPhone"
+- pressKey: Enter
+- waitForAnimationToEnd
+- assertVisible: "Apple iPhone 15 Pro (128 Gb) - Titanio Azul"
+- tapOn: "iPhone"
+- waitForAnimationToEnd
+- tapOn: "clear"
+- inputText: "nintendo"
+- pressKey: Enter
+- waitForAnimationToEnd
+- assertVisible: .*Nintendo Switch Oled.*
+- tapOn: "Nintendo"
+- eraseText
+- assertVisible: .*iPhone.*
+- assertVisible: .*nintendo.*
+- tapOn: .*iPhone.*
+- waitForAnimationToEnd
+- assertVisible: "Apple iPhone 15 Pro (128 Gb) - Titanio Azul"

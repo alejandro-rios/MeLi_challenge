@@ -1,0 +1,36 @@
+appId: com.alejandrorios.meli_challenge
+onFlowComplete:
+  - stopApp
+---
+- launchApp
+- assertVisible: "No hay resultados !!"
+- assertVisible: "Prueba buscando algun producto en la barra de busqueda"
+- tapOn: "Buscar en MeLi Challenge"
+- inputText: "Apple iPhone 15 Pro (128 Gb)"
+- pressKey: Enter
+- waitForAnimationToEnd
+- assertVisible: "Apple iPhone 15 Pro (128 Gb) - Titanio Azul"
+- tapOn: "Apple iPhone 15 Pro (128 Gb) - Titanio Azul"
+- waitForAnimationToEnd
+- assertVisible: "Apple iPhone 15 Pro (128 Gb) - Titanio Azul"
+- assertVisible: .*1/10.*
+- swipe:
+    start: "90%,35%"
+    end: "1%,35%"
+- assertVisible: .*2/10.*
+- assertVisible: "$ 4.369.300"
+- assertVisible: .*Envio gratis.*
+- assertVisible: .*Garantía.*
+- assertVisible: .*Descripción.*
+- scrollUntilVisible:
+    element: "Agregar al carrito"
+    direction: DOWN
+- waitForAnimationToEnd
+- assertVisible: "Comprar ahora"
+- assertVisible: "Agregar al carrito"
+- tapOn: "Comprar ahora"
+- assertVisible: "Has comprado el producto imaginario"
+- waitForAnimationToEnd
+- tapOn: "Agregar al carrito"
+- assertVisible: "Añadido al carrito imaginario"
+- waitForAnimationToEnd

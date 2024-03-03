@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">MeLi Challenge</string>
+    <string name="clear_search">clear</string>
+    <string name="back">goBack</string>
+    <string name="free_shipping">Envio gratis</string>
+    <string name="seller">Por %s</string>
+    <string name="search_hint">Buscar en MeLi Challenge</string>
+    <string name="no_results">No hay resultados !!</string>
+    <string name="try_searching">Prueba buscando algun producto en la barra de busqueda</string>
+    <string name="buy_now">Comprar ahora</string>
+    <string name="add_to_cart">Agregar al carrito</string>
+    <string name="details">Descripción</string>
+    <string name="show_more">… Ver descripción completa</string>
+    <string name="show_less">&#160;&#160;Ver menos</string>
+    <string name="error_title">Oops!</string>
+    <string name="error_message">Parece que algo salió mal.\nno te preocupes, vamos a intentarlo de nuevo</string>
+    <string name="error_message_search">Parece que algo salió mal.\ncomprueba tu conexion a internet o buscando
+    algo diferente</string>
+    <string name="retry">Reintentar</string>
+    <string name="discount">%s%% OFF</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor eleifend molestie. Suspendisse potenti. Morbi sem lorem, dapibus sed mi non, sollicitudin finibus ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus sed elit felis. Morbi pretium sit amet lorem a ornare. Vivamus pellentesque accumsan tincidunt. Nam facilisis porttitor purus, nec dictum velit ultrices vel. Donec vitae sem et leo sodales sollicitudin. Morbi lobortis, purus in pulvinar ornare, nunc arcu imperdiet erat, sed consectetur diam enim ut sem. Ut diam ex, faucibus a felis a, rutrum sodales ligula. Donec ex velit, ornare non tempor sed, molestie quis justo. Mauris tellus nisi, tempor in efficitur sit amet, feugiat id eros.
+
+Maecenas accumsan mollis ante nec fermentum. Pellentesque laoreet risus et fermentum tristique. Proin feugiat est at tellus consectetur fermentum. Suspendisse semper finibus tincidunt. Nam vitae risus rutrum, volutpat dolor vel, maximus quam. Praesent odio nulla, maximus vel nisl vitae, porttitor euismod mi. Pellentesque tincidunt arcu ut nisi pretium hendrerit. Aliquam aliquam vitae nunc nec volutpat. Pellentesque tempor aliquam felis, nec pretium turpis efficitur a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</string>
+    <string name="buy_now_message">Has comprado el producto imaginario</string>
+    <string name="added_to_cart">Añadido al carrito imaginario</string>
+    <string name="picture_slider_description">picture slider %1$s</string>
+    <string name="product_thumb_description">product thumbnail</string>
+    <string name="product_tile_thumb_description">product tile thumbnail</string>
+    <string name="back_arrow_description">back Arrow</string>
+</resources>
