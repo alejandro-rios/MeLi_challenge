@@ -10,3 +10,6 @@ This project includes 2 test flows:
 
 ## 🎥 Test sample video
 
+
+https://github.com/alejandro-rios/MeLi_challenge/assets/10689052/489cf51d-3902-41a8-aa1b-53730c79ecd1
+
