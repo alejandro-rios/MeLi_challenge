@@ -8,6 +8,10 @@ This project includes 2 test flows:
 - [product_detail_test](product_detail_test.yaml): This flow search for an `Iphone 15` select one of the results and 
   validates components in the product detail.
 
+To run Maestro you need to install the CLI first, check [here](https://maestro.mobile.dev/getting-started/installing-maestro), once you installed, 
+you need to first run the app in the emulator, then you just need to tun the command `maestro test maestro_tests/` 
+to run both test or `maestro test maestro_tests/TEST_FLOW_TO_RUN` to run one specific flow.
+
 ## 🎥 Test sample video
 
 
