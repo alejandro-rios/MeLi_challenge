@@ -1,13 +1,13 @@
 package com.alejandrorios.meli_challenge
 
-import com.alejandrorios.meli_challenge.data.utils.CallResponse
-import com.alejandrorios.meli_challenge.data.utils.NetworkErrorException
 import com.alejandrorios.meli_challenge.data.entities.APIProductDescription
 import com.alejandrorios.meli_challenge.data.entities.APIProductDetail
 import com.alejandrorios.meli_challenge.data.entities.APISearchResults
 import com.alejandrorios.meli_challenge.data.network.MeliAPIService
 import com.alejandrorios.meli_challenge.data.repository.MeliRepositoryImpl
-import com.alejandrorios.meli_challenge.utils.MockkableTest
+import com.alejandrorios.meli_challenge.data.utils.CallResponse
+import com.alejandrorios.meli_challenge.data.utils.NetworkErrorException
+import com.alejandrorios.meli_challenge.utils.MockKableTest
 import io.mockk.CapturingSlot
 import io.mockk.coEvery
 import io.mockk.coVerify
@@ -22,7 +22,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class MeliRepositoryTest : MockkableTest {
+class MeliRepositoryTest : MockKableTest {
 
     @MockK
     lateinit var meliAPIService: MeliAPIService
@@ -50,6 +50,10 @@ class MeliRepositoryTest : MockkableTest {
         } returns true
 
         coEvery {
+            responseData.errorBody()
+        } returns null
+
+        coEvery {
             responseData.body()
         } returns mockk(relaxed = true)
 
@@ -59,7 +63,7 @@ class MeliRepositoryTest : MockkableTest {
 
         runBlocking {
             repository.searchProduct("product", 10, 0)
-        } shouldBeInstanceOf CallResponse::class
+        } shouldBeInstanceOf CallResponse.Success::class
 
         coVerify {
             meliAPIService.searchProduct("product", 10, 0)
@@ -82,6 +86,10 @@ class MeliRepositoryTest : MockkableTest {
         } returns true
 
         coEvery {
+            responseData.errorBody()
+        } returns null
+
+        coEvery {
             responseData.body()
         } returns mockk(relaxed = true)
 
@@ -91,7 +99,7 @@ class MeliRepositoryTest : MockkableTest {
 
         runBlocking {
             repository.getProductDetails("someProductId")
-        } shouldBeInstanceOf CallResponse::class
+        } shouldBeInstanceOf CallResponse.Success::class
 
         coVerify {
             meliAPIService.getProductDetails("someProductId")
@@ -104,7 +112,6 @@ class MeliRepositoryTest : MockkableTest {
         val call = mockk<Call<APIProductDescription>>()
         val responseData = mockk<Response<APIProductDescription>>(relaxed = true)
         val slot = CapturingSlot<Callback<APIProductDescription>>()
-        val api = APIProductDescription("algo")
 
         coEvery {
             meliAPIService.getProductDescription("someProductId")
@@ -113,6 +120,10 @@ class MeliRepositoryTest : MockkableTest {
         coEvery {
             responseData.isSuccessful
         } returns true
+
+        coEvery {
+            responseData.errorBody()
+        } returns null
 
         coEvery {
             responseData.body()
@@ -124,7 +135,7 @@ class MeliRepositoryTest : MockkableTest {
 
         runBlocking {
             repository.getProductDescription("someProductId")
-        } shouldBeInstanceOf CallResponse::class
+        } shouldBeInstanceOf CallResponse.Success::class
 
         coVerify {
             meliAPIService.getProductDescription("someProductId")

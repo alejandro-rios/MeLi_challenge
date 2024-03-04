@@ -8,7 +8,7 @@ import com.alejandrorios.meli_challenge.domain.models.ProductDetail
 import com.alejandrorios.meli_challenge.domain.repository.MeliRepository
 import com.alejandrorios.meli_challenge.ui.screens.product_detail.ProductDetailViewModel
 import com.alejandrorios.meli_challenge.utils.MainDispatcherRule
-import com.alejandrorios.meli_challenge.utils.MockkableTest
+import com.alejandrorios.meli_challenge.utils.MockKableTest
 import io.mockk.coEvery
 import io.mockk.impl.annotations.MockK
 import io.mockk.mockk
@@ -21,7 +21,7 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 
-class ProductDetailViewModelTest : MockkableTest {
+class ProductDetailViewModelTest : MockKableTest {
     @get:Rule
     val mainDispatcherRule = MainDispatcherRule()
 

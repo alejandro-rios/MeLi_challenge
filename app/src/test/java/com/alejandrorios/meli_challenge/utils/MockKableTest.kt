@@ -5,7 +5,7 @@ import io.mockk.unmockkAll
 import org.junit.After
 import org.junit.Before
 
-interface MockkableTest {
+interface MockKableTest {
 
     @Before
     fun setUp() {

@@ -9,7 +9,7 @@ import com.alejandrorios.meli_challenge.domain.models.SearchPaging
 import com.alejandrorios.meli_challenge.domain.models.SearchResults
 import com.alejandrorios.meli_challenge.domain.repository.MeliRepository
 import com.alejandrorios.meli_challenge.ui.screens.search_product.SearchProductViewModel
-import com.alejandrorios.meli_challenge.utils.MockkableTest
+import com.alejandrorios.meli_challenge.utils.MockKableTest
 import io.mockk.coEvery
 import io.mockk.every
 import io.mockk.impl.annotations.MockK
@@ -25,7 +25,7 @@ import org.junit.Rule
 import org.junit.Test
 
 @OptIn(ExperimentalCoroutinesApi::class)
-class SearchProductViewModelTest : MockkableTest {
+class SearchProductViewModelTest : MockKableTest {
     @get:Rule
     val mainDispatcherRule = MainDispatcherRule()
 
