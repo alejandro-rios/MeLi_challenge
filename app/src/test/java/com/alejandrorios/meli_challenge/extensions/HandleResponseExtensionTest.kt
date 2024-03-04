@@ -1,4 +1,4 @@
-package com.alejandrorios.meli_challenge
+package com.alejandrorios.meli_challenge.extensions
 
 import com.alejandrorios.meli_challenge.data.utils.CallResponse
 import com.alejandrorios.meli_challenge.data.utils.NetworkErrorException

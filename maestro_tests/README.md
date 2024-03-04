@@ -1,5 +1,5 @@
 # Maestro
-Maestro is the simplest and most effective mobile UI testing framework, is a modern, straightforward, and highly 
+[Maestro](https://maestro.mobile.dev/) is the simplest and most effective mobile UI testing framework, is a modern, straightforward, and highly 
 efficient solution designed for rapid mobile UI testing.
 
 This project includes 2 test flows:

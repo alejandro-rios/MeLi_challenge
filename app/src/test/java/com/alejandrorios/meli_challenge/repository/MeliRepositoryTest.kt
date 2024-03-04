@@ -1,4 +1,4 @@
-package com.alejandrorios.meli_challenge
+package com.alejandrorios.meli_challenge.repository
 
 import com.alejandrorios.meli_challenge.data.entities.APIProductDescription
 import com.alejandrorios.meli_challenge.data.entities.APIProductDetail

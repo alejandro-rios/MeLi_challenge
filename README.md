@@ -11,10 +11,9 @@ The architecture used for the application consists of the following:
 - A mix of MVVM and MVI patterns.
 - Android Architecture component([ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel))
 
-In this case 
+This project uses basic UiStates(`SearchProductsUiState`, `ProductDetailUIState`) to handle the application interface state at a given moment.
 
 ## 📚 Tech stack
-
 - [Retrofit2](https://square.github.io/retrofit/): Type-safe client for Android and Java/Kotlin, used to make API REST calls.
 - [Koin](https://insert-koin.io/): A smart Kotlin injection library.
 - [Kotlin Coroutines](https://github.com/Kotlin/kotlinx.coroutines): Simple library used to run Asynchronous or non-blocking calls.
@@ -28,7 +27,6 @@ In this case
 - [Turbine](https://github.com/cashapp/turbine): A small testing library for kotlinx.coroutines Flow.
 
 ## 🧱 Project Structure
-
 ```sh
 .
 ├── data
@@ -71,8 +69,16 @@ In this case
 - `di` all the classes related to dependency injection(`appModule`, `dataModule`, `domainModule`).
 - `utils` contains an Extension file used in the project.
 
-### 🖼️ Images
+### 🧪 Testing
+- This project includes unit tests for:
+  - Repository
+  - Mappers
+  - ViewModels
+  - Extensions
 
+And UI tests with [Maestro](/maestro_tests)
+
+### 🖼️ Images
 <img
 alt="empty_screen"
 height="400"
@@ -100,12 +106,6 @@ src="media/product_detail_2.png" />
 
 
 ### 📓 Notes and considerations
-
-- This project includes testing of:
-    - Repository
-    - Mappers
-    - ViewModels
-    - UI(with [Maestro](/maestro_tests))
 - Didn't spend too much time making the screens look good, M3 has a lot of tones and colors to understand.
 - Normally, I use Koin for DI, but I also have experience with hilt.
 - Warning image taken from [here](https://www.flaticon.com/free-icon/warning_2797387?term=error&page=1&position=5&origin=search&related_id=2797387)
