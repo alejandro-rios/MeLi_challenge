@@ -1,5 +1,5 @@
 # MeLi challenge 🎉🎉
-MeLi Challenge is an app that let's you search products and see the details using MercadoLibre's public API.
+MeLi Challenge is an app that let's you search products with pagination and see the details using MercadoLibre's public API.
 
 The app runs from API 24 and above, just clone the project and run it as you normally run an Android project.
 
@@ -85,6 +85,10 @@ src="media/error_view.png" />
 alt="search_results"
 height="400"
 src="media/search_results.png" />
+<img
+alt="search_results_pagination"
+height="400"
+src="media/search_results_pagination.png" />
 <img
 alt="product_detail_1"
 height="400"
