@@ -70,7 +70,7 @@ This project uses basic UiStates(`SearchProductsUiState`, `ProductDetailUIState`
 - `utils` contains an Extension file used in the project.
 
 ## 🧪 Testing
-- This project includes unit tests for:
+This project includes unit tests for:
   - Repository
   - Mappers
   - ViewModels
