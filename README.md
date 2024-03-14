@@ -69,7 +69,7 @@ This project uses basic UiStates(`SearchProductsUiState`, `ProductDetailUIState`
 - `di` all the classes related to dependency injection(`appModule`, `dataModule`, `domainModule`).
 - `utils` contains an Extension file used in the project.
 
-### 🧪 Testing
+## 🧪 Testing
 - This project includes unit tests for:
   - Repository
   - Mappers
@@ -78,7 +78,7 @@ This project uses basic UiStates(`SearchProductsUiState`, `ProductDetailUIState`
 
 And UI tests with [Maestro](/maestro_tests)
 
-### 🖼️ Images
+## 🖼️ Images
 <img
 alt="empty_screen"
 height="400"
@@ -105,7 +105,7 @@ height="400"
 src="media/product_detail_2.png" />
 
 
-### 📓 Notes and considerations
+## 📓 Notes and considerations
 - Didn't spend too much time making the screens look good, M3 has a lot of tones and colors to understand.
 - Normally, I use Koin for DI, but I also have experience with hilt.
 - Warning image taken from [here](https://www.flaticon.com/free-icon/warning_2797387?term=error&page=1&position=5&origin=search&related_id=2797387)
